@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    display: flex;
+    padding: 32px 0 32px 0;
+    gap: 32px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    text-align: center;
+    font-family: Inter, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.logo-image img {
+    width: 144px;
+    height: 40px;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 641px;
+    background-color: #EEF0F2;
+}
+
+
+.logo-image img {
+    width: 144px;
+    height: 40px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 640px;
+    height: 561px;
+    justify-content: space-between;
+    grid-row-gap: 24px;
+}
+
+.hero-content h1 {
+    width: 100%;
+    font-size: 26px;
+    color: #252323;
+    font-weight: 600;
+    line-height: 34px;
+    margin: 0;
+}
+
+.hero-content p {
+    word-break: normal;
+    width: 100%;
+    font-size: 16px;
+    color: #4B4B4B;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+}
+
+.hero-content .small-text {
+    width: 640px;
+    height: 21px;
+    font-size: 14px;
+    color: #4B4B4B;
+    font-weight: 400;
+    line-height: 21px;
+    margin: 0;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 640px;
+    height: 293px;
+    margin: 0;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.invite {
+    display: flex;
+    align-items: center;
+    width: 432px;
+    height: 45px;
+    gap: 10px;
+}
+
+.invite input {
+    flex-grow: 1;
+    height: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #C0C0C0;
+}
+
+.invite button {
+    height: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.invite button:hover {
+    background-color: #0056b3;
+}
+
+
+.product-card h3 {
+    color: #333;
+}
+
+.product-card p {
+    color: #666;
+}
+
+.product-card a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.product-card a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    width: 100%;
+    max-width: 640px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    grid-row-gap: 24px;
+    box-sizing: border-box;
+}
+
+.footer-text {
+    width: 100%;
+    max-width: 592px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.footer-text p {
+    color: #4B4B4B;
+    margin: 0;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    height: 24px;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    gap: 24px;
+}
+
+.footer-links a {
+    color: #007bff;
+    font-size: 13px;
+    line-height: 19.5px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+
+}
+
+.ourprod {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 34px;
+}
+
+.ourprod h1 {
+    margin: 0;
+    font-size: 26px;
+    line-height: 33px;
+    font-weight: 600;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    border-color: #D8D8D8;
+    border-width: 1px;
+    border-style: solid;
+    overflow: hidden;
+    text-align: center;
+    width: 314px;
+    height: 340px;
+}
+
+
+.card-header {
+    height: 159px;
+}
+
+.card-body {
+    justify-content: space-between;
+    width: 100%;
+    height: 181px;
+
+}
+
+.card-text {
+    padding: 16px;
+    width: 282px;
+    height: 103px;
+    text-align: left;
+
+}
+
+.card-text h2 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23.4px;
+}
+
+.card-text p {
+    margin-top: 8px;
+    font-size: 16px;
+    color: #4B4B4B;
+    font-weight: 400;
+    line-height: 24px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    white-space: normal;
+    line-clamp: 3;
+}
+
+.card-link {
+    width: 94px;
+    height: 23px;
+    margin-left: 16px;
+    padding: 8px 0 8px 0;
+}
+
+.card-link a {
+    display: inline-block;
+    font-family: Mulish, serif;
+    margin: 0;
+    color: #3366FF;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 24px 0 24px 0;
+        grid-row-gap: 24px;
+    }
+
+    .hero-section {
+        width: 100%;
+        height: 674px;
+        padding: 24px 24px 24px 24px;
+        box-sizing: border-box;
+    }
+
+    .hero-content {
+        width: 100%;
+        height: 626px;
+    }
+
+    .hero-content h1 {
+        width: 100%;
+        height: 58px;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 28.6px;
+    }
+
+    .hero-content p {
+        width: 100%;
+        height: 126px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .hero-content .small-text {
+        width: 100%;
+        height: 42px;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: 206px;
+    }
+
+    .container {
+        box-sizing: border-box;
+    }
+
+    .ourprod {
+        margin-bottom: 4px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        width: 272px;
+        height: 1453px;
+        grid-row-gap: 12px;
+    }
+
+    .card {
+        width: 271px;
+        height: 340px;
+    }
+
+    .card-text {
+        width: 239px;
+        word-wrap: break-word;
+    }
+
+    .card-text p {
+        width: 239px;
+    }
+
+
+    .invite {
+        flex-direction: column;
+        width: 100%;
+        height: 98px;
+        gap: 8px;
+    }
+
+    .invite input, .invite button {
+        width: 100%;
+        height: 45px;
+    }
+
+
+    footer {
+        gap: 24px;
+        padding: 0 24px 0 24px;
+    }
+
+    .footer-links {
+        width: 320px;
+        height: 17px;
+        gap: 8px;
+    }
+
+    .footer-links a {
+        font-size: 11px;
+        line-height: 16.5px;
+        font-weight: 400;
+    }
+}

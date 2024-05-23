@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href='https://fonts.googleapis.com/css?family=Mulish' rel='stylesheet'>
+<link rel="stylesheet" href="style.css">
+<head>
+    <title>Muse Group Frontend Academy</title>
+</head>
+<body>
+<div class="logo-image">
+    <img src="Your%20Logo.png" alt="Muse Group Logo">
+</div>
+<div class="hero-section">
+    <div class="hero-content">
+        <h1>Muse Group Frontend Academy</h1>
+        <p>Our academy offers a transformative learning experience designed to empower you with the skills and knowledge
+            needed to succeed in the ever-evolving field of frontend development.</p>
+        <div class="hero-image">
+            <img src="boy1.png" alt="Student playing guitar">
+        </div>
+        <p class="small-text">Are you ready to turn your passion for technology into a thriving career?</p>
+        <form class="invite" id="invite-form">
+            <input type="email" id="email-input" placeholder="Email">
+            <button type="submit" id="join-button">Join ➜</button>
+        </form>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="ourprod">
+        <h1> Our products </h1>
+    </div>
+    <div class="cards">
+        <div class="card">
+            <div class="card-header" style="background-color: #FFC800;"></div>
+            <div class="card-body">
+                <div class="card-text">
+                    <h2>Ultimate Guitar</h2>
+                    <p>The best platform for music makers to play songs they love. Home to the world's largest music
+                        community.</p>
+                </div>
+                <div class="card-link">
+                    <a href="https://www.ultimate-guitar.com/">Read more ></a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" style="background-color: #2E68C0;"></div>
+            <div class="card-body">
+                <div class="card-text">
+                    <h2>MuseScore</h2>
+                    <p>Create, play back, and print sheet music with free open source notation software.</p>
+                </div>
+                <div class="card-link">
+                    <a href="https://musescore.com/">Read more ></a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" style="background-color: #EA1542;"></div>
+            <div class="card-body">
+                <div class="card-text">
+                    <h2>audio.com</h2>
+                    <p>The easiest way to share any sound online.</p>
+                </div>
+                <div class="card-link">
+                    <a href="https://audio.com/">Read more ></a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" style="background-color: #1D4ED8;"></div>
+            <div class="card-body">
+                <div class="card-text">
+                    <h2>Audacity</h2>
+                    <p>The world's most popular audio editing and recording app.</p>
+                </div>
+                <div class="card-link">
+                    <a href="https://www.audacityteam.org/">Read more ></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="social-links">
+        <a href="https://www.instagram.com/animaapp/"><img src="inst.png" alt="Instagram"></a>
+        <a href="https://twitter.com/AnimaApp"><img src="tg.png" alt="Telegram"></a>
+        <a href="https://www.linkedin.com/company/anima-app"><img src="link.png" alt="LinkedIn"></a>
+        <a href="https://discord.gg/eQxkYTNxSp"><img src="face.png" alt="Facebook"></a>
+    </div>
+    <div class="footer-text">
+        <p>You're not just a student - you're part of a vibrant community of like-minded individuals united by a passion
+            for frontend development. Collaborate, innovate, and grow alongside fellow learners and industry
+            professionals as you embark on this exciting journey together.</p>
+    </div>
+    <div class="footer-links">
+        <a href="#">Help Center</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+    </div>
+</footer>
+
+</body>
+</html>
+<script>
+
+    let form = document.getElementById('invite-form')
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        var emailInput = document.getElementById('email-input');
+        var email = emailInput.value;
+        var regex = /^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/;
+
+        if (regex.test(email)) {
+            alert("Welcome to the team!");
+        } else {
+            alert("Email is invalid");
+        }
+    });
+</script>
